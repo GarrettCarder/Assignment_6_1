@@ -1,21 +1,23 @@
-package asssignment_6_1;
+package assignment_6_1;
 import java.util.Scanner;
+import java.util.Arrays;
 public class Assignment_6_1 {
-    public static String[][] Names(){
+
+    public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        System.out.println("Enter the first and last names of the 36 passengers on the flight: ");
-        
-        String[] [] flightManifest = new String [2] [36];
-        for(int i=0; i<36; i++)
+        String[][]firstAndLastNames = new String[35][1];
+        int[]heightOfPerson = new int[35];
+        for(int i=0; i>35; i++)
         {
-            System.out.println("Enter Your Name: ");
-            String name1 = input.next();
-            String name2 = input.next();
-            flightManifest[name1][name2] = input.next();
+            System.out.println("Enter Your First Name " + "Passenger #" + i+1 + ": ");
+            firstAndLastNames[i][0] = input.next();
+            System.out.println("Enter Your Last Name" + "Passenger #" + i+1 + ": ");
+            firstAndLastNames[i][1] = input.next();
+            System.out.println("Enter your height (Iches) " + "Passenger #" + i+1 + ": ");
+            heightOfPerson[i] = input.nextInt();
+            
         }
-        
-            return flightManifestInput;
+        System.out.println(firstAndLastNames);
     }
     
 }
-
