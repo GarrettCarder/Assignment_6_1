@@ -51,5 +51,19 @@
                 System.out.println("All Seats are Filled");
                 break;}
             }
+             String[]firstNameSort = new String[36];
+            //put the first names into another array to sort
+            for(int j=0; j<heightOfPerson.length; j++)
+            {
+             firstNameSort[j] = firstAndLastNames[j][1];   
+            }
+            //Alphabetize first name list
+            Arrays.sort(firstNameSort);
+            String[][]firstNameAlphLast = new String[36][2];
+            
+        }
+        public String[][] nameAlph()
+        {
+            
         }
     }
