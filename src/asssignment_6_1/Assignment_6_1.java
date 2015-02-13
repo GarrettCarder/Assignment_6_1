@@ -9,7 +9,6 @@
             //Create int & string []
             String[][]firstAndLastNames = new String[36][2];
             int[]heightOfPerson = new int[36];
-            String[][]seatingChartDiagram = new String[9][4];
             int[][]seatRequest = new int [36][2];
             
             //Gather list of names and heights
@@ -51,19 +50,24 @@
                 System.out.println("All Seats are Filled");
                 break;}
             }
-             String[]firstNameSort = new String[36];
+             String[][]getSeats = new String[36][2];
             //put the first names into another array to sort
             for(int j=0; j<heightOfPerson.length; j++)
             {
-             firstNameSort[j] = firstAndLastNames[j][1];   
+             getSeats[j][0] = firstAndLastNames[j][0];
+             getSeats[j][1] = firstAndLastNames[j][1];
             }
-            //Alphabetize first name list
-            Arrays.sort(firstNameSort);
-            String[][]firstNameAlphLast = new String[36][2];
+            String[][] seatingChart = new String[9][4];
+            String[][] seatingChartRet = new String [9][4];
             
         }
-        public String[][] nameAlph()
+        public String[][] seatingChart(String[][] seatingChartRet, int[] heightOfPerson)
         {
             
+            return seatingChartRet;
+        }
+        public Boolean ifTooHigh()
+        {
+                    
         }
     }
