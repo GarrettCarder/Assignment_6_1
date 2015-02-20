@@ -61,27 +61,14 @@
             String[][] seatingChartRet = new String [9][4];
             
         }
-        public boolean ifTooHigh(int [] heightOfPerson, int k)
-        {
-            if(heightOfPerson[k] >= 74)
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
-        }
         
-        public String[][] seatingChart(String[][] seatingChartRet, int[] heightOfPerson, boolean ifTooHigh, String [][] firstAndLastNames)
+        public String[][] seatingChart(String[][] seatingChartRet, int[] heightOfPerson, String [][] firstAndLastNames)
         {
             for(int k=0; k<heightOfPerson.length; k++)
             {
-                if(ifTooHigh = true)
-                {
-                    
-                }
+                
             }
             return seatingChartRet;
         }
+        
     }
